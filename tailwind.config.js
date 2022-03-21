@@ -9,5 +9,9 @@ module.exports = {
   variants: {
     backgroundColor: ['responsive', 'focus', 'active', 'hover'],
   },
-  plugins: [require('daisyui')],
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
+  daisyui: {
+    themes: ['night', 'cupcake'],
+    darkTheme: 'night',
+  },
 }
